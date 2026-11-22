@@ -1,0 +1,14 @@
+{
+  "name": "fingerprint-lab",
+  "version": "0.1.0",
+  "description": "See a client's JA3/JA4 and HTTP/2 fingerprint the way an anti-bot edge does",
+  "type": "module",
+  "private": true,
+  "engines": { "node": ">=22.18" },
+  "scripts": {
+    "start": "node src/server.ts",
+    "test": "CAPTURES=/dev/null node --test 'test/*.test.ts'",
+    "collect": "node scripts/collect.ts"
+  },
+  "license": "MIT"
+}
